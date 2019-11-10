@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Stupid Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form>
+            <div class="field">
+                <label>Value 1: </label>
+                <input type="text" id="valueone">
+            </div>
+            <div class="field">
+                <label>Value 2: </label>
+                <input type="text" id="valuetwo">
+            </div>
+            <div class="field">
+                <span>Operator:</span>
+                <select id="operator">
+                    <option value="add">Add</option>
+                    <option value="min">Minus</option>
+                    <option value="div">Divide</option>
+                    <option value="mul">Multiply</option>
+                </select>
+            </div>
+            <button type="button" onclick="calc()">Calcuate</button>
+        </form>
+
+        <div class="resultbox"><span id="result"></span></div>
+
+        <script src="./js.js"></script>
+    </body>
+</html>
